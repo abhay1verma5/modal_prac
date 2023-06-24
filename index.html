@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Share Modal | Codehelp</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  
+  <div class="circle1"></div>
+ 
+  <div class="circle2"></div>
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="./assets/profile-name.jpg" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Abhay Verma</h2>
+      </div>
+      <div class="designation">
+        <h3>Web Developer</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>Social platform</div>
+        </button>
+
+        <a class="btn-follow btn-card " href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.tenor.com%2FwwyV1t6VEEMAAAAC%2Facha.gif&tbnid=tjySR63K_v12TM&vet=12ahUKEwj5mZuDvNz_AhVqyKACHU3uCC4QMygGegUIARDNAQ..i&imgrefurl=https%3A%2F%2Ftenor.com%2Fview%2Facha-gif-26394025&docid=ahZjDK--Wsf9YM&w=375&h=498&q=acha%20meme%20link&ved=2ahUKEwj5mZuDvNz_AhVqyKACHU3uCC4QMygGegUIARDNAQ" >
+            Click on me 
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+      </div>
+    </div>
+
+
+    <div>
+
+      <h3>Share this via</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://indianmemetemplates.com/nirlajj-tu-fir-aa-gaya/" class="icon" id="facebbok">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmemetemplatehouse.com%2Fmeme%2Fchala-ja-bsdk%2F&psig=AOvVaw3bqJSyDWM8HQwZjAQJS7n8&ust=1687715675136000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPC59_y83P8CFQAAAAAdAAAAABAE" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://justmemes.co.in/video-tag/chutiya-banaya-tumko-meme-template/" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.scrolldroll.com%2Fmirzapur-meme-templates-season-1%2Fabeyy-padhai-likhai-karo-iasyas-bano-mirzapur-memes%2F&psig=AOvVaw0IZpoXSe0udzUq_WdQAu3l&ust=1687715728786000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLj1t5a93P8CFQAAAAAdAAAAABAE" class="icon" id="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.tenor.com%2FwwyV1t6VEEMAAAAC%2Facha.gif&tbnid=tjySR63K_v12TM&vet=12ahUKEwj5mZuDvNz_AhVqyKACHU3uCC4QMygGegUIARDNAQ..i&imgrefurl=https%3A%2F%2Ftenor.com%2Fview%2Facha-gif-26394025&docid=ahZjDK--Wsf9YM&w=375&h=498&q=acha%20meme%20link&ved=2ahUKEwj5mZuDvNz_AhVqyKACHU3uCC4QMygGegUIARDNAQ" class="icon" id="telegram">
+         
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
